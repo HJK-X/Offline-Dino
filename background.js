@@ -102,7 +102,7 @@ async function restoreDefaults() {
 }
 
 chrome.action.onClicked.addListener(() => {
-    chrome.tabs.create(details.tabId, {
+    chrome.tabs.create({
         url: "content/dino.html?chrome://dino",
     });
 });
