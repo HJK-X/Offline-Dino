@@ -1,0 +1,63 @@
+<html dir="ltr" lang="en" class="offline">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#fff" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,
+                                   maximum-scale=1.0, user-scalable=no" />
+    <title>Dino 2.0</title>
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body id="t" style="font-family: 'Segoe UI', Tahoma, sans-serif; font-size: 75%">
+    <div id="main-frame-error" class="interstitial-wrapper">
+        <div id="main-content">
+            <div class="icon icon-offline" style="visibility: hidden"></div>
+            <div id="application" tabindex="0" title="Dino game" class="runner-container"></div>
+
+            <div id="main-message">
+                <h1><span>No internet</span></h1>
+
+                <div id="error-information-box">
+                    <div id="error-information-content">
+                        <div id="suggestions-list">
+                            <p>Try:</p>
+                            <ul class="">
+                                <li>Checking the network cables, modem, and router</li>
+                                <li>Reconnecting to Wi-Fi</li>
+                                <li>
+                                    Playing the Chrome Dino Game or
+                                    changing the
+                                    <a id="settings" href="/content/settings.html">settings</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <h4><span>URL: <a id="url"></a></span></h4>
+
+                        <div class="error-code">
+                            ERR_INTERNET_DISCONNECTED
+                            <br />
+                            Dinosaur Game replaced by Chrome Dinosaur 2.0 extension
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="offline-resources">
+        <img id="offline-resources-sprites" src="" />
+        <audio id="offline-sound-press" src=""></audio>
+        <audio id="offline-sound-hit" src=""></audio>
+        <audio id="offline-sound-reached" src=""></audio>
+    </div>
+
+    <script type="text/javascript" src="dino.js"></script>
+</body>
+
+</html>

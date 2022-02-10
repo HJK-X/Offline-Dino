@@ -1,0 +1,29 @@
+{
+    "name": "Offline Dinosaur 2.0",
+    "description": "A completely customizable version of the Offline Dinosaur Game.",
+    "version": "1.0",
+    "manifest_version": 3,
+    "offline_enabled": true,
+
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": ["storage", "webNavigation", "tabs", "unlimitedStorage"],
+
+    "options_page": "content/settings.html",
+    "action": {
+        "default_title": "Click me to open Offline Dino",
+        "default_icon": {
+            "16": "/images/icon16.png",
+            "32": "/images/icon32.png",
+            "48": "/images/icon48.png",
+            "128": "/images/icon128.png"
+        }
+    },
+    "icons": {
+        "16": "/images/icon16.png",
+        "32": "/images/icon32.png",
+        "48": "/images/icon48.png",
+        "128": "/images/icon128.png"
+    }
+}
