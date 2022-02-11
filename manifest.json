@@ -8,7 +8,7 @@
     "background": {
         "service_worker": "background.js"
     },
-    "permissions": ["storage", "webNavigation", "tabs", "unlimitedStorage"],
+    "permissions": ["storage", "webNavigation", "unlimitedStorage"],
 
     "options_page": "content/settings.html",
     "action": {
