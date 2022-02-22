@@ -118,6 +118,28 @@ async function restoreOptions() {
             options.appendChild(document.createElement("br"));
         }
     }
+
+    options.appendChild(document.createElement("br"));
+
+    //config game file
+    {
+        var item = document.createElement("div");
+        var label = document.createElement("label");
+        label.htmlFor = "game";
+        label.textContent = "Game";
+        var input = document.createElement("textarea");
+        input.id = "game";
+
+        input.addEventListener("change", (e) => {
+            
+        });
+
+        item.appendChild(label);
+        item.appendChild(input);
+
+        options.appendChild(item);
+        options.appendChild(document.createElement("br"));
+    }
 }
 
 function convertFile(file, callback) {
