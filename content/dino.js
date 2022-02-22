@@ -23,8 +23,10 @@ async function load() {
     var storage = await chrome.storage.local.get([
         "runnerConfig",
         "offlineResources",
-        "highscore"
+        "highscore",
+        "game",
     ]);
+
     Runner.config = storage.runnerConfig;
 
     var offline = storage.offlineResources;
@@ -37,8 +39,12 @@ async function load() {
     document.getElementById("offline-sound-reached").src = offline.REACHED;
 
     savedScore = storage.highscore;
-    
-    new Runner();
+
+    if (storage.game != "") {
+        eval(storage.game);
+    } else {
+        new Runner();
+    }
 }
 
 var savedScore;

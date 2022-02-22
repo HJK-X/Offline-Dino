@@ -2,6 +2,7 @@
 
 var config = {};
 var resources = {};
+var gameCode = "";
 var options;
 var stat;
 
@@ -126,12 +127,12 @@ async function restoreOptions() {
         var item = document.createElement("div");
         var label = document.createElement("label");
         label.htmlFor = "game";
-        label.textContent = "Game";
+        label.textContent = "Completely replace game code";
         var input = document.createElement("textarea");
         input.id = "game";
 
         input.addEventListener("change", (e) => {
-            
+            gameCode = e.target.value;
         });
 
         item.appendChild(label);
